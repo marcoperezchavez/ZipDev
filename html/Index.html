@@ -1,0 +1,128 @@
+<html>
+
+<head>
+  <script src="../Js/Index.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/Index.css">
+  <link rel="stylesheet" type="text/css" href="../css/multipleChoise.css">
+  <link rel="stylesheet" type="text/css" href="../css/palindromo.css">
+</head>
+
+<body>
+  <div class="Title">
+    <h1>ZIPDEV</h1>
+  </div>
+  <div>
+    <ul class="classul">
+      <li class="classli"><a onclick="goToQ1()">Q1</a></li>
+      <li class="classli"><a onclick="goToQ2()">Q2</a onclick="goToQ1()"></li>
+      <li class="classli"><a onclick="goToQ3()">Q3</a></li>
+      <li class="classli"><a onclick="goToQ4()">Q4</a></li>
+    </ul>
+  </div>
+  <div class="main-section">
+    <div id="q1" class="question-container">
+      <div class="question1">
+        <ul class="menu cf" id="option">
+          <li>
+            <a>How do you describe yourself as a developer?</a>
+            <ul class="submenu" id="aoption" onclick="getQuestion1(event)">
+              <li value="hermit"><a>Hermit</a></li>
+              <li value="hermit2"><a>Sociable</a></li>
+              <li value="hermit3"><a>Serious</a></li>
+              <li value="hermit4"><a>Grumpy</a></li>
+              <li value="hermit5"><a>Do not know yet</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="q2" class="question-container hidden-section">
+      <div class="question2">
+
+        <div class="hiddenCB">
+          <h3>Select the Javascript based technologies:</h3>
+          <div>
+            <input type="checkbox" name="technologies" id="AngularJS" value="AngularJS" /><label
+              for="AngularJS">AngularJS</label>
+            <input type="checkbox" name="technologies" id="Ember" value="Ember" /><label for="Ember">Ember</label>
+            <input type="checkbox" name="technologies" id="VueJS" value="VueJS" /><label for="VueJS">VueJS</label>
+            <input type="checkbox" name="technologies" id="doNot" value="do not know yet" /><label for="doNot">do not
+              know yet</label>
+          </div>
+        </div>
+        <input type="button" class="myButton" onclick="getCheckedCheckboxesFor('technologies');" value="Save" />
+
+      </div>
+    </div>
+
+
+
+    <div id="q3" class="question-container hidden-section">
+      <div class="question3">
+
+        <div class="form__group">
+          <input type="text" class="form__input" id="inputPalindromo" placeholder="Insert a palindromo" required="" />
+          <label for="name" class="form__label">Insert a palindromo</label>
+        </div>
+
+        <input type="button" class="myButton" onclick="validatePalindromo();" value="Validate palindromo" />
+        <input type="button" class="myButton btn2" onclick="goToQ4();" value="Next" />
+        <p id=result>
+
+        </p>
+
+      </div>
+    </div>
+
+
+    <div id="q4" class="question-container hidden-section">
+      <div class="question4">
+
+        <div class="form__group">
+          <input type="text" class="form__input" id="InputS1" placeholder="Insert sentence 1" required="" />
+          <label for="name" class="form__label">Insert sentence 1</label>
+          <input type="text" class="form__input" id="InputS2" placeholder="Insert sentence 2" required="" />
+          <label for="name" class="form__label">Reverse sentence</label>
+        </div>
+
+        <input type="button" class="myButton" onclick="reverseSentence();" value="Reverse Word" />
+        <input type="button" class="myButton" onclick="goToQ5();" value="Next" />
+        <p id=result>
+
+        </p>
+
+      </div>
+    </div>
+
+
+    <div id="q5" class="question-container hidden-section">
+      <div class="question4">
+
+        <div class="form__group">
+          <h1>Your results</h1>
+          <br>
+         <p id="rq1">Q1:</p>
+         <p id="rq2">Q2:</p>
+         <p id="rq3">Q3:</p>
+         <p id="rq4">Q4:</p>
+        </div>
+
+        <input type="button" class="myButton" onclick="reverseSentence();" value="Reverse Word" />
+        <input type="button" class="myButton" onclick="goToQ5();" value="Next" />
+        <p id=result>
+
+        </p>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>

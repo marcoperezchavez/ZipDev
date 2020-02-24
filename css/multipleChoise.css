@@ -1,0 +1,78 @@
+body {
+    padding: 10% 20%;
+    font-family: 'Open Sans', sans-serif;
+    background: #111;
+    color: #fff;
+  }
+  
+  label {
+    padding: 4px 6px;
+    line-height: 190%;
+    outline-style: none;
+    transition: all .6s;
+  }
+  
+  .hiddenCB div {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .hiddenCB input[type="checkbox"],
+  .hiddenCB input[type="radio"] {
+    display: none;
+    
+  }
+  
+  .hiddenCB label {
+    
+    cursor: pointer;
+  }
+  
+  .hiddenCB input[type="checkbox"]+label:hover{
+    background: #6e732b
+  }
+  
+  .hiddenCB input[type="checkbox"]:checked+label {
+    background: #6e732b
+  }
+  
+  .hiddenCB input[type="checkbox"]:checked+label:hover{
+    background:#6e732b
+  }
+
+  .question2{
+    margin: 50px auto;
+    width: 800px;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+  }
+
+  .myButton {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+    margin-left: 30px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
